@@ -25,11 +25,11 @@ Email: lusicaliu@outlook.com \n
 - GPU Acceleration
 
 == Publication
-- \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler”, IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE), Mar. 14–23, 2022.
+- \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler”, IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE), Mar. 14–23, 2022. *(Best Paper Award)*
 
 - \[C5\] Peiyu Liao, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting”, IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE), Mar. 14–23, 2022.
 
-- \[C4\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jin Miao, Jianli Chen, Hao Yu, Bei Yu, “Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design”, IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE), Feb. 01–05, 2021. *(Best Paper Nomination)*
+- \[C4\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jin Miao, Jianli Chen, Hao Yu, Bei Yu, “Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design”, IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE), Feb. 01–05, 2021. *(Best Paper Award Nomination)*
 
 - \[C3\] *Siting Liu*, Qi Sun, Peiyu Liao, Yibo Lin, Bei Yu, “Global Placement with Deep Learning-Enabled Explicit Routability Optimization”, IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE), Feb. 01–05, 2021.
 
@@ -45,7 +45,15 @@ Email: lusicaliu@outlook.com \n
 - B.S.  (ACM class), Computer Science and Technology,
   [http://www.hust.edu.cn Huazhong University of Science and Technology(HUST)], Sept 2016 - June 2020
 
+== Teaching
+- CSCI1540, 2020-R1,    Introduction to Computing Using C++
+- CSCI4120, 2020-R2,    Principles of Computer Game Software
+- CSCI1130, 2021-R1,    Introduction to Computing Using Java
+- CSCI1530, 2021-R2,    Computer Principles and Java Programming
+
 == Awards
+- Best Paper Award, DATE, 2022
+- Best Paper Award Nomination,  DATE,   2021
 - Full Postgraduate Studentship, 	CUHK, 	2020-2024
 - Outstanding Graduate, 	HUST, 	2020
 - CCF Elite Collegiate Student Award, 	CCF, 	2019
