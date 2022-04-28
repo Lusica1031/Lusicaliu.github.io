@@ -1,4 +1,4 @@
-# jemdoc: addcss{myMiddle.css}
+# jemdoc: addcss{jemdoc.css}
 # jemdoc: nofooter
 = Siting Liu
 
