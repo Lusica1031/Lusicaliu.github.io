@@ -137,10 +137,10 @@ def standardconf():
   <head>
   <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-
+  
   [defaultcss]
   <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-
+  
   [windowtitle]
   # used in header for window title.
   <title>|</title>
@@ -150,22 +150,22 @@ def standardconf():
 
   [fwtitleend]
   </div>
-
+  
   [doctitle]
   # used at top of document.
   <div id="toptitle">
   <h1>|</h1>
-
+  
   [subtitle]
   <div id="subtitle">|</div>
-
+  
   [doctitleend]
   </div>
-
+  
   [bodystart]
   </head>
   <body>
-
+  
   [analytics]
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -176,64 +176,83 @@ def standardconf():
       var pageTracker = _gat._getTracker("|");
       pageTracker._trackPageview();
   } catch(err) {}</script>
+  
+  [menustart]
+  <table summary="Table for page layout." id="tlayout">
+  <tr valign="top">
+  <td id="layout-menu">
+  
+  [menuend]
+  </td>
+  <td id="layout-content">
+  
+  [menucategory]
+  <div class="menu-category">|</div>
+
+  [menuitem]
+  <div class="menu-item"><a href="|1">|2</a></div>
 
   [specificcss]
   <link rel="stylesheet" href="|" type="text/css" />
 
   [specificjs]
   <script src="|.js" type="text/javascript"></script>
-
-  [menustart]
-  <header class="bg-light">
-  <div class="navigation-bar light">
-  <div class="navigation-bar-content container">
-  <nav class="horizontal-menu"><ul class="element-menu">
-
-  [menuend]
-  </ul></nav></div></div>
-  </header>
-  <div class="page"><div class="page-content margin20"><div class="page-container">
-
-  [menucategory]
-  <li><a class="dropdown-toggle" href="#">|</a>
-  <ul class="dropdown-menu" data-role="dropdown">
-
-  [menucategoryend]
-  </ul></li>
-
-  [menuitem]
-  <li><a href="|1"|3>|2</a></li>
-
+  
   [currentmenuitem]
-  <li><a href="|1" class="current"|3>|2</a></li>
-
-  [menulastbit]
-  </div></div></div>
-
+  <div class="menu-item"><a href="|1" class="current">|2</a></div>
+  
   [nomenu]
-  <div class="container">
-
+  <div id="layout-content">
+  
+  [menulastbit]
+  </td>
+  </tr>
+  </table>
+  
   [nomenulastbit]
   </div>
-
+  
   [bodyend]
   </body>
   </html>
-
-  [infoblockstart]
-  <div class="example margin0"><pre>
-
+  
+  [infoblock]
+  <div class="infoblock">
+  
+  [codeblock]
+  <div class="codeblock">
+  
+  [blocktitle]
+  <div class="blocktitle">|</div>
+  
+  [infoblockcontent]
+  <div class="blockcontent">
+  
+  [codeblockcontent]
+  <div class="blockcontent"><pre>
+  
+  [codeblockend]
+  </pre></div></div>
+  
+  [codeblockcontenttt]
+  <div class="blockcontent"><tt class="tthl">
+  
+  [codeblockendtt]
+  </tt></div></div>
+  
   [infoblockend]
-  </pre></div>
-
-  [footerstart]
-  <div class="panel ribbed-amber"><div class="panel-content">
-
-  [footerend]
   </div></div>
-
+  
+  [footerstart]
+  <div id="footer">
+  <div id="footer-text">
+  
+  [footerend]
+  </div>
+  </div>
+  
   [lastupdated]
-  Page generated |
+  Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 
   [sourcelink]
   (<a href="|">source</a>)
@@ -300,8 +319,6 @@ def parseconf(cns):
 
 def insertmenuitems(f, mname, current, prefix):
   m = open(mname, 'rb')
-
-  unclosed_menu_category = 0
   while pc(controlstruct(m)) != '':
     l = readnoncomment(m)
     l = l.strip()
@@ -312,12 +329,6 @@ def insertmenuitems(f, mname, current, prefix):
 
     if r: # then we have a menu item.
       link = r.group(2)
-      if link[0] == '\\':
-        option = ' target="blank"'
-        link = link[1:]
-      else:
-        option = ''
-
       # Don't use prefix if we have an absolute link.
       if '://' not in r.group(2):
         link = prefix + allreplace(link)
@@ -342,80 +353,29 @@ def insertmenuitems(f, mname, current, prefix):
             menuitem += br(re.sub(r'(?<!\\n) +', '~', group), f)
 
       if link[-len(current):] == current:
-        hb(f.outf, f.conf['currentmenuitem'], link, menuitem, option)
+        hb(f.outf, f.conf['currentmenuitem'], link, menuitem)
       else:
-        hb(f.outf, f.conf['menuitem'], link, menuitem, option)
+        hb(f.outf, f.conf['menuitem'], link, menuitem)
 
     else: # menu category.
-      if unclosed_menu_category==1:
-        hb(f.outf, f.conf['menucategoryend'], br(l, f))
-      unclosed_menu_category = 1
       hb(f.outf, f.conf['menucategory'], br(l, f))
-
-  if unclosed_menu_category==1:
-    hb(f.outf, f.conf['menucategoryend'], br(l, f))
 
   m.close()
 
 def out(f, s):
   f.write(s)
 
-def myussub(link):
-  link = link.replace('_', 'UNDERSCORE65358')
-
-  return link
-
-def myusresub(r):
-  r = re.sub('UNDERSCORE65358', '_', r)
-
-  return r
-
-def myeqsub(eqtext):
-  eqtext = eqtext.replace('\\', 'BACKSLASH65358')
-  eqtext = eqtext.replace('[', 'OPENBRACKET65358')
-  eqtext = eqtext.replace(']', 'CLOSEBRACKET65358')
-  eqtext = eqtext.replace('+', 'PLUS65358')
-  eqtext = eqtext.replace('&', 'AMPERSAND65358')
-  eqtext = eqtext.replace('<', 'LESSTHAN65358')
-  eqtext = eqtext.replace('>', 'GREATERTHAN65358')
-#  eqtext = eqtext.replace('\n', ' ')
-  eqtext = eqtext.replace('_', 'UNDERSCORE65358')
-
-  return eqtext
-
-def myeqresub(r):
-  r = re.sub('BACKSLASH65358', r'\\', r)
-  r = re.sub('OPENBRACKET65358', '[', r)
-  r = re.sub('CLOSEBRACKET65358', ']', r)
-  r = re.sub('PLUS65358', '+', r)
-  r = re.sub('AMPERSAND65358', '&', r)
-  r = re.sub('LESSTHAN65358', '<', r)
-  r = re.sub('GREATERTHAN65358', '>', r)
-  r = re.sub('QUOTATION65358', '"', r)
-  r = re.sub('UNDERSCORE65358', '_', r)
-
-  return r
-
-def hb(f, tag, content1, content2=None, content3=None):
+def hb(f, tag, content1, content2=None):
   """Writes out a halfblock (hb)."""
 
   if content1 is None:
     content1 = ""
 
-  if content3 is None:
-    content3 = ""
-
   if content2 is None:
-#    out(f, re.sub(r'\|', content1, tag))
-    r = re.sub(r'\|', content1, tag)
-    r = re.sub(r'\|3', content3, r)
-    r = myeqresub(r)
-    out(f, r)
+    out(f, re.sub(r'\|', content1, tag))
   else:
     r = re.sub(r'\|1', content1, tag)
-    r = re.sub(r'\|3', content3, r)
     r = re.sub(r'\|2', content2, r)
-    r = myeqresub(r)
     out(f, r)
 
 def pc(f, ditchcomments=True):
@@ -559,27 +519,50 @@ def replaceequations(b, f):
       else:
         fn = str(abs(hash(eq)))
 
+      # Find out the baseline when we first encounter an equation (don't
+      # bother, otherwise).
+      # Other initialization stuff which we do only once we know we have
+      # equations.
+      if f.baseline is None:
+        # See if the eqdir exists, and if not, create it.
+        if not os.path.isdir(f.eqdir):
+          os.mkdir(f.eqdir)
+
+        # Check that the tools we need exist.
+        (supported, message) = testeqsupport()
+        if not supported:
+          print 'WARNING: equation support disabled.'
+          print message
+          f.eqsupport = False
+          return b
+
+        # Calculate the baseline.
+        eqt = "0123456789xxxXXxX"
+        (f.baseline, blfn) = geneq(f, eqt, dpi=f.eqdpi, wl=False,
+                       outname='baseline-' + str(f.eqdpi))
+        if os.path.exists(blfn):
+          os.remove(blfn)
+
+      fn = fn + '-' + str(f.eqdpi)
+      (depth, fullfn) = geneq(f, eq, dpi=f.eqdpi, wl=wl, outname=fn)
+      fullfn = fullfn.replace('\\', '/')
+
+      offset = depth - f.baseline + 1
+
       eqtext = allreplace(eq)
-#      print eqtext
-#      eqtext = eqtext.replace('\\', '')
-      eqtext = myeqsub(eqtext)
+      eqtext = eqtext.replace('\\', '')
+      eqtext = eqtext.replace('\n', ' ')
 
       # Double braces will cause problems with escaping of image tag.
       eqtext = eqtext.replace('{{', 'DOUBLEOPENBRACE')
       eqtext = eqtext.replace('}}', 'DOUBLECLOSEBRACE')
 
       if wl:
-#        b = b[:m.start()] + \
-#            '{{\n<div class="eqwl"><img class="eqwl" src="%s" alt="%s" />\n<br /></div>}}' % (fullfn, eqtext) + b[m.end():]
-        #b = b[:m.start()] + 'BACKSLASH65358OPENBRACKET65358\n' + eqtext + '\nBACKSLASH65358CLOSEBRACKET65358'+ b[m.end():]
-        b = b[:m.start()] + 'BACKSLASH65358OPENBRACKET65358' + eqtext + 'BACKSLASH65358CLOSEBRACKET65358'+ b[m.end():]
-        #b = b[:m.start()] + 'BACKSLASH(BACKSLASHbegin{equation}\n' + eqtext + '\nBACKSLASHend{equation}BACKSLASH)'+ b[m.end():]
-        b = '<p style=QUOTATION65358text-align:centerQUOTATION65358>\n' + b + '\n</p>'
-        b = myeqsub(b)
+        b = b[:m.start()] + \
+            '{{\n<div class="eqwl"><img class="eqwl" src="%s" alt="%s" />\n<br /></div>}}' % (fullfn, eqtext) + b[m.end():]
       else:
-#        b = b[:m.start()] + \
-#          '{{<img class="eq" src="%s" alt="%s" style="vertical-align: -%dpx" />}}' % (fullfn, eqtext, offset) + b[m.end():]
-        b = b[:m.start()] + 'BACKSLASH65358(' + eqtext + 'BACKSLASH65358)' + b[m.end():]
+        b = b[:m.start()] + \
+          '{{<img class="eq" src="%s" alt="%s" style="vertical-align: -%dpx" />}}' % (fullfn, eqtext, offset) + b[m.end():]
 
       # jem: also clean out line breaks in the alttext?
       m = r.search(b, m.start())
@@ -630,12 +613,6 @@ def replacelinks(b):
   while m:
     m1 = m.group(1).strip()
 
-    if m1[0] == '/':
-        option = ''
-        m1 = m1[1:]
-    else:
-        option = ' target="blank"'
-
     if '@' in m1 and not m1.startswith('mailto:') and not \
        m1.startswith('http://'):
       link = 'mailto:' + m1
@@ -649,7 +626,6 @@ def replacelinks(b):
     link = re.sub(r'(\+\{\{|\}\}\+)', r'%', link)
 
     link = quote(link)
-    link = myussub(link)  # to prevent _ in address from changing
 
     if m.group(2):
       linkname = m.group(2).strip()
@@ -657,7 +633,7 @@ def replacelinks(b):
       # remove any mailto before labelling.
       linkname = re.sub('^mailto:', '', link)
 
-    b = b[:m.start()] + r'<a href=\"%s\"%s>%s<\/a>' % (link, option, linkname) + b[m.end():]
+    b = b[:m.start()] + r'<a href=\"%s\">%s<\/a>' % (link, linkname) + b[m.end():]
 
     m = r.search(b, m.start())
 
@@ -700,20 +676,15 @@ def br(b, f, tableblock=False):
   # Deal with /italics/ first because the '/' in other tags would otherwise
   # interfere.
   r = re.compile(r'(?<!\\)/(.*?)(?<!\\)/', re.M + re.S)
-  b = re.sub(r, r'<em>\1</em>', b)
+  b = re.sub(r, r'<i>\1</i>', b)
 
-  # Deal with *bold*. (metro)
+  # Deal with *bold*.
   r = re.compile(r'(?<!\\)\*(.*?)(?<!\\)\*', re.M + re.S)
-  b = re.sub(r, r'<strong>\1</strong>', b)
-
-  # Deal with _underscore_. (metro)
-  r = re.compile(r'(?<!\\)_(.*?)(?<!\\)_', re.M + re.S)
-  b = re.sub(r, r'<u><strong>\1</strong></u>', b)
-  b = myusresub(b)
+  b = re.sub(r, r'<b>\1</b>', b)
 
   # Deal with +monospace+.
   r = re.compile(r'(?<!\\)\+(.*?)(?<!\\)\+', re.M + re.S)
-  b = re.sub(r, r'<code>\1</code>', b)
+  b = re.sub(r, r'<tt>\1</tt>', b)
 
   # Deal with "double quotes".
   r = re.compile(r'(?<!\\)"(.*?)(?<!\\)"', re.M + re.S)
@@ -744,7 +715,6 @@ def br(b, f, tableblock=False):
   # Deal with non-breaking space ~.
   r = re.compile(r"(?<!\\)~", re.M + re.S)
   b = re.sub(r, r'&nbsp;', b)
-  b = re.sub('TILDE', '~', b)
 
   # Deal with registered trademark \R.
   r = re.compile(r"(?<!\\)\\R", re.M + re.S)
@@ -765,7 +735,7 @@ def br(b, f, tableblock=False):
   # Deal with paragraph break. Caution! Should only use when we're already in
   # a paragraph.
   r = re.compile(r"(?<!\\)\\p", re.M + re.S)
-  b = re.sub(r, r'</p><p class="readable-text">', b)
+  b = re.sub(r, r'</p><p>', b)
 
   if tableblock:
     # Deal with ||, meaning </td></tr><tr><td>
@@ -783,7 +753,7 @@ def br(b, f, tableblock=False):
       col = 2
       r2s = r2.split(l)
       for x in r2s[:-1]:
-        l2 += x + ('</td><td class="c%d">' % col) # text-center, text-right
+        l2 += x + ('</td><td class="c%d">' % col)
         col += 1
       l2 += r2s[-1]
 
@@ -831,6 +801,133 @@ def putbsbs(l):
     l[i] = '\\b' + l[i] + '\\b'
 
   return l
+
+def gethl(lang):
+  # disable comments by default, by choosing unlikely regex.
+  d = {'strings':False}
+  if lang in ('py', 'python'):
+    d['statement'] = ['break', 'continue', 'del', 'except', 'exec',
+              'finally', 'pass', 'print', 'raise', 'return', 'try',
+              'with', 'global', 'assert', 'lambda', 'yield', 'def',
+              'class', 'for', 'while', 'if', 'elif', 'else',
+              'import', 'from', 'as', 'assert']
+    d['builtin'] = ['True', 'False', 'set', 'open', 'frozenset',
+            'enumerate', 'object', 'hasattr', 'getattr', 'filter',
+            'eval', 'zip', 'vars', 'unicode', 'type', 'str',
+            'repr', 'round', 'range', 'and', 'in', 'is', 'not',
+            'or']
+    d['special'] = ['cols', 'optvar', 'param', 'problem', 'norm2', 'norm1',
+            'value', 'minimize', 'maximize', 'rows', 'rand',
+            'randn', 'printval', 'matrix']
+    d['error'] = ['\w*Error',]
+    d['commentuntilend'] = '#'
+    d['strings'] = True
+  elif lang in ['c', 'c++', 'cpp']:
+    d['statement'] = ['if', 'else', 'printf', 'return', 'for']
+    d['builtin'] = ['static', 'typedef', 'int', 'float', 'double', 'void',
+            'clock_t', 'struct', 'long', 'extern', 'char']
+    d['operator'] = ['#include.*', '#define', '@pyval{', '}@', '@pyif{',
+             '@py{']
+    d['error'] = ['\w*Error',]
+    d['commentuntilend'] = ['//', '/*', ' * ', '*/']
+  elif lang in ('rb', 'ruby'):
+    d['statement'] = putbsbs(['while', 'until', 'unless', 'if', 'elsif',
+                  'when', 'then', 'else', 'end', 'begin',
+                  'rescue', 'class', 'def'])
+    d['operator'] = putbsbs(['and', 'not', 'or'])
+    d['builtin'] = putbsbs(['true', 'false', 'require', 'warn'])
+    d['special'] = putbsbs(['IO'])
+    d['error'] = putbsbs(['\w*Error',])
+    d['commentuntilend'] = '#'
+    d['strings'] = True
+    d['strings'] = True
+    if lang in ['c++', 'cpp']:
+      d['builtin'] += ['bool', 'virtual']
+      d['statement'] += ['new', 'delete']
+      d['operator'] += ['&lt;&lt;', '&gt;&gt;']
+      d['special'] = ['public', 'private', 'protected', 'template',
+              'ASSERT']
+  elif lang == 'sh':
+    d['statement'] = ['cd', 'ls', 'sudo', 'cat', 'alias', 'for', 'do',
+              'done', 'in', ]
+    d['operator'] = ['&gt;', r'\\', r'\|', ';', '2&gt;', 'monolith&gt;',
+             'kiwi&gt;', 'ant&gt;', 'kakapo&gt;', 'client&gt;']
+    d['builtin'] = putbsbs(['gem', 'gcc', 'python', 'curl', 'wget', 'ssh',
+                'latex', 'find', 'sed', 'gs', 'grep', 'tee',
+                'gzip', 'killall', 'echo', 'touch',
+                'ifconfig', 'git', '(?<!\.)tar(?!\.)'])
+    d['commentuntilend'] = '#'
+    d['strings'] = True
+  elif lang == 'matlab':
+    d['statement'] = putbsbs(['max', 'min', 'find', 'rand', 'cumsum', 'randn', 'help',
+                     'error', 'if', 'end', 'for'])
+    d['operator'] = ['&gt;', 'ans =', '>>', '~', '\.\.\.']
+    d['builtin'] = putbsbs(['csolve'])
+    d['commentuntilend'] = '%'
+    d['strings'] = True
+  elif lang == 'commented':
+    d['commentuntilend'] = '#'
+
+  # Add bsbs (whatever those are).
+  for x in ['statement', 'builtin', 'special', 'error']:
+    if x in d:
+      d[x] = putbsbs(d[x])
+
+  return d
+
+def language(f, l, hl):
+  l = l.rstrip()
+  l = allreplace(l)
+  # handle strings.
+  if hl['strings']:
+    r = re.compile(r'(".*?")')
+    l = r.sub(r'<span CLCLclass="string">\1</span>', l)
+    r = re.compile(r"('.*?')")
+    l = r.sub(r'<span CLCLclass="string">\1</span>', l)
+
+  if 'statement' in hl:
+    r = re.compile('(' + '|'.join(hl['statement']) + ')')
+    l = r.sub(r'<span class="statement">\1</span>', l)
+
+  if 'operator' in hl:
+    r = re.compile('(' + '|'.join(hl['operator']) + ')')
+    l = r.sub(r'<span class="operator">\1</span>', l)
+
+  if 'builtin' in hl:
+    r = re.compile('(' + '|'.join(hl['builtin']) + ')')
+    l = r.sub(r'<span class="builtin">\1</span>', l)
+
+  if 'special' in hl:
+    r = re.compile('(' + '|'.join(hl['special']) + ')')
+    l = r.sub(r'<span class="special">\1</span>', l)
+
+  if 'error' in hl:
+    r = re.compile('(' + '|'.join(hl['error']) + ')')
+    l = r.sub(r'<span class="error">\1</span>', l)
+
+  l = re.sub('CLCLclass', 'class', l)
+
+  if 'commentuntilend' in hl:
+    cue = hl['commentuntilend']
+    if isinstance(cue, (list, tuple)):
+      for x in cue:
+        if l.strip().startswith(x):
+          hb(f, '<span class="comment">|</span>\n', allreplace(l))
+          return
+        if '//' in cue: # Handle this separately.
+          r = re.compile(r'\/\/.*')
+          l = r.sub(r'<span class="comment">\g<0></span>', l)
+    elif cue == '#': # Handle this separately.
+      r = re.compile(r'#.*')
+      l = r.sub(r'<span class="comment">\g<0></span>', l)
+    elif cue == '%': # Handle this separately.
+      r = re.compile(r'%.*')
+      l = r.sub(r'<span class="comment">\g<0></span>', l)
+    elif l.strip().startswith(cue):
+      hb(f, '<span class="comment">|</span>\n', allreplace(l))
+      return
+
+  out(f, l + '\n')
 
 def geneq(f, eq, dpi, wl, outname):
   # First check if there is an existing file.
@@ -946,7 +1043,7 @@ def dashlist(f, ordered=False):
       # same level, make a new list item.
       out(f.outf, '\n</li>\n<li>')
 
-    out(f.outf, '<p class="readable-text">' + myeqresub(br(s, f)) + '</p>')
+    out(f.outf, '<p>' + br(s, f) + '</p>')
     level = newlevel
 
   for i in range(level):
@@ -967,9 +1064,101 @@ def colonlist(f):
     rest = g.group(2)
 
     hb(f.outf, '<dt>|</dt>\n', br(defpart, f))
-    hb(f.outf, '<dd><p class="readable-text">|</p></dd>\n', br(rest, f))
+    hb(f.outf, '<dd><p>|</p></dd>\n', br(rest, f))
 
   out(f.outf, '</dl>\n')
+
+def codeblock(f, g):
+  if g[1] == 'raw':
+    raw = True
+    ext_prog = None
+  elif g[0] == 'filter_through':
+    # Filter through external program.
+    raw = False
+    ext_prog = g[1]
+    buff = ""
+  else:
+    ext_prog = None
+    raw = False
+    out(f.outf, f.conf['codeblock'])
+    if g[0]:
+      hb(f.outf, f.conf['blocktitle'], g[0])
+    if g[1] == 'jemdoc':
+      out(f.outf, f.conf['codeblockcontenttt'])
+    else:
+      out(f.outf, f.conf['codeblockcontent'])
+
+  # Now we are handling code.
+  # Handle \~ and ~ differently.
+  stringmode = False
+  while 1: # wait for EOF.
+    l = nl(f, codemode=True)
+    if not l:
+      break
+    elif l.startswith('~'):
+      break
+    elif l.startswith('\\~'):
+      l = l[1:]
+    elif l.startswith('\\{'):
+      l = l[1:]
+    elif ext_prog:
+      buff += l
+      continue
+    elif stringmode:
+      if l.rstrip().endswith('"""'):
+        out(f.outf, l + '</span>')
+        stringmode = False
+      else:
+        out(f.outf, l)
+      continue
+
+    # jem revise pyint out of the picture.
+    if g[1] == 'pyint':
+      pyint(f.outf, l)
+    else:
+      if raw:
+        out(f.outf, l)
+      elif g[1] == 'jemdoc':
+        # doing this more nicely needs python 2.5.
+        for x in ('#', '~', '>>>', '\~', '{'):
+          if str(l).lstrip().startswith(x):
+            out(f.outf, '</tt><pre class="tthl">')
+            out(f.outf, l + '</pre><tt class="tthl">')
+            break
+        else:
+          for x in (':', '.', '-'):
+            if str(l).lstrip().startswith(x):
+              out(f.outf, '<br />' + prependnbsps(l))
+              break
+          else:
+            if str(l).lstrip().startswith('='):
+              out(f.outf, prependnbsps(l) + '<br />')
+            else:
+              out(f.outf, l)
+      else:
+        if l.startswith('\\#include{') or l.startswith('\\#includeraw{'):
+          out(f.outf, l[1:])
+        elif l.startswith('#') and doincludes(f, l[1:]):
+          continue
+        elif g[1] in ('python', 'py') and l.strip().startswith('"""'):
+          out(f.outf, '<span class="string">' + l)
+          stringmode = True
+        else:
+          language(f.outf, l, gethl(g[1]))
+
+  if raw:
+    return
+  elif ext_prog:
+    print 'filtering through %s...' % ext_prog
+
+    output,_ = Popen(ext_prog, shell=True, stdin=PIPE,
+                     stdout=PIPE).communicate(buff)
+    out(f.outf, output)
+  else:
+    if g[1] == 'jemdoc':
+      out(f.outf, f.conf['codeblockendtt'])
+    else:
+      out(f.outf, f.conf['codeblockend'])
 
 def prependnbsps(l):
   g = re.search('(^ *)(.*)', l).groups()
@@ -1164,9 +1353,7 @@ def procfile(f):
           s += l
           if l.strip() == '\)':
             break
-      r = br(s.strip(), f)
-      r = myeqresub(r)
-      out(f.outf, r)
+      out(f.outf, br(s.strip(), f))
 
     # look for lists.
     elif p == '-':
@@ -1201,7 +1388,7 @@ def procfile(f):
         nl(f)
         continue
       elif imgblock:
-        out(f.outf, '</div></div></div></div>\n')
+        out(f.outf, '</td></tr></table>\n')
         imgblock = False
         nl(f)
         continue
@@ -1222,7 +1409,16 @@ def procfile(f):
         if len(g) >= 1:
           g[0] = br(g[0], f)
 
-        if len(g) >= 2 and g[1] == 'table':
+        if len(g) in (0, 1): # info block.
+          out(f.outf, f.conf['infoblock'])
+          infoblock = True
+          
+          if len(g) == 1: # info block.
+            hb(f.outf, f.conf['blocktitle'], g[0])
+
+          out(f.outf, f.conf['infoblockcontent'])
+
+        elif len(g) >= 2 and g[1] == 'table':
           # handles
           # {title}{table}{name}
           # one | two ||
@@ -1230,42 +1426,40 @@ def procfile(f):
           name = ''
           if len(g) >= 3 and g[2]:
             name += ' id="%s"' % g[2]
-          out(f.outf, '<table class="table hovered bordered">\n<tr class="r1"><td class="c1">') # bordered, bordered, hovered
+          out(f.outf, '<table%s>\n<tr class="r1"><td class="c1">' % name)
           f.tablerow = 1
           f.tablecol = 1
 
           tableblock = True
 
-        elif len(g) >= 4 and (g[1] == 'img_left' or g[1] == 'img_center'):
+        elif len(g) == 2:
+          codeblock(f, g)
+
+        elif len(g) >= 4 and g[1] == 'img_left':
           # handles
           # {}{img_left}{source}{alttext}{width}{height}{linktarget}.
           g += ['']*(7 - len(g))
-
+          
           if g[4].isdigit():
             g[4] += 'px'
 
           if g[5].isdigit():
             g[5] += 'px'
 
-          out(f.outf, '<div class="panel margin10 padding0"><div class="panel-content fg-dark">\n')
+          out(f.outf, '<table class="imgtable"><tr><td>\n')
+          if g[6]:
+            out(f.outf, '<a href="%s">' % g[6])
           out(f.outf, '<img src="%s"' % g[2])
           out(f.outf, ' alt="%s"' % g[3])
           if g[4]:
             out(f.outf, ' width="%s"' % g[4])
           if g[5]:
             out(f.outf, ' height="%s"' % g[5])
-          if g[1] == 'img_left':
-            out(f.outf, ' class="place-left margin10"/>')
-          else:
-            out(f.outf, ' class="place-center margin10"/>')
-          out(f.outf, '<div class="page"><div class="page-content margin10 nlm nrm">')
+          out(f.outf, ' />')
+          if g[6]:
+            out(f.outf, '</a>')
+          out(f.outf, '&nbsp;</td>\n<td align="left">')
           imgblock = True
-
-        elif len(g) in (0, 1, 2): # info block.
-          # handles
-          # ~~~
-          out(f.outf, f.conf['infoblockstart'])
-          infoblock = True
 
         else:
           raise JandalError("couldn't handle block", f.linenum)
@@ -1275,13 +1469,8 @@ def procfile(f):
       if s:
         if tableblock:
           hb(f.outf, '|\n', s)
-        elif imgblock:
-          hb(f.outf, '\n<p class="text-muted">|</p>\n', s)
-        elif infoblock:
-          #hb(f.outf, '\n<p class="code-text text-muted margin0 padding0">|</p>\n', s)
-          hb(f.outf, '|\n', s)
         else:
-          hb(f.outf, '\n<p class=readable-text>|</p>\n', s)
+          hb(f.outf, '<p>|</p>\n', s)
 
   if showfooter and (showlastupdated or showsourcelink):
     out(f.outf, f.conf['footerstart'])
