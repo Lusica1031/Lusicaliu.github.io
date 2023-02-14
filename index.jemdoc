@@ -14,6 +14,7 @@ Supervisor: [http://www.cse.cuhk.edu.hk/~byu/ Professor Bei Yu]
 I am currently a Ph.D. student at [http://www.cse.cuhk.edu.hk the Department of Computer Science and Engineering], [http://www.cuhk.edu.hk The Chinese University of Hong Kong (CUHK)], 
 under the supervision of [http://www.cse.cuhk.edu.hk/~byu/ Prof. Bei Yu] since Fall 2020. 
 Previously, I received my B.S. in the Department of Computer Science and Technology from [http://www.hust.edu.cn Huazhong University of Science and Technology (HUST)] in 2020.
+My Chinese name is 刘思婷.
 
 == Contact
 Email: lusicaliu@outlook.com \n
@@ -25,6 +26,12 @@ Email: lusicaliu@outlook.com \n
 
 == Publication
 === Conference papers
+- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, “Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement”, ACM/IEEE Design Automation Conference (DAC), San Francisco, Jul. 09–13, 2023.
+
+- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, “Realistic Sign-off Timing Prediction via Multimodal Fusion”, ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+
+- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, “Mitigating Distribution Shift for Congestion Optimization in Global Placement”, ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+
 - \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler”, IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022. *(Best Paper Award)*
 
 - \[C5\] Peiyu Liao, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting”, IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022.
