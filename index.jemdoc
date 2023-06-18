@@ -3,8 +3,8 @@
 # jemdoc: nofooter
 
 ~~~
-{}{img_left}{stliu_1.png}{150}{150}{Siting Liu}
-Siting Liu, Ph.D. Student \n
+{}{img_left}{siting_1.png}{150}{150}{Siting Liu}
+Siting Liu, Ph.D. Candidate \n
 [http://www.cse.cuhk.edu.hk/ Department of Computer Science and Engineering]\n
 [http://www.cuhk.edu.hk/ The Chinese University of Hong Kong]\n
 Supervisor: [http://www.cse.cuhk.edu.hk/~byu/ Professor Bei Yu]
@@ -27,30 +27,30 @@ Email: lusicaliu@outlook.com \n
 
 == Publication
 === Conference papers
-- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, “Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement”, ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, [pub/C9.pdf “Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement”], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, “Realistic Sign-off Timing Prediction via Multimodal Fusion”, ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, [pub/C8.pdf “Restructure-Tolerant Timing Prediction via Multimodal Fusion”], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, “Mitigating Distribution Shift for Congestion Optimization in Global Placement”, ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, [pub/C7.pdf “Mitigating Distribution Shift for Congestion Optimization in Global Placement”], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler”, IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022. *(Best Paper Award)*
+- \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774606 “FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022. *(Best Paper Award)*
 
-- \[C5\] Peiyu Liao, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, “DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting”, IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022.
+- \[C5\] Peiyu Liao, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774725 “DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022.
 
-- \[C4\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jin Miao, Jianli Chen, Hao Yu, Bei Yu, “Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design”, IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021. *(Best Paper Award Nomination)*
+- \[C4\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jin Miao, Jianli Chen, Hao Yu, Bei Yu, [https://doi.org/10.23919/DATE51398.2021.9474241 “Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021. *(Best Paper Award Nomination)*
 
-- \[C3\] *Siting Liu*, Qi Sun, Peiyu Liao, Yibo Lin, Bei Yu, “Global Placement with Deep Learning-Enabled Explicit Routability Optimization”, IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021.
+- \[C3\] *Siting Liu*, Qi Sun, Peiyu Liao, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE51398.2021.9473959 “Global Placement with Deep Learning-Enabled Explicit Routability Optimization”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021.
 
-- \[C2\] Zhuolun He, Peiyu Liao, *Siting Liu*, Yuzhe Ma, Bei Yu, “Physical Synthesis for Advanced Neural Network Processors”, IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021. (Invited Paper)
+- \[C2\] Zhuolun He, Peiyu Liao, *Siting Liu*, Yuzhe Ma, Bei Yu, [https://doi.org/10.1145/3394885.3431625 “Physical Synthesis for Advanced Neural Network Processors”], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021. (Invited Paper)
 
-- \[C1\] Haoyu Yang, Shifan Zhang, Kang Liu, *Siting Liu*, Benjamin Tan, Ramesh Karri, Siddharth Garg, Bei Yu, Evangeline F.Y. Young, “Attacking a CNN-based Layout Hotspot Detector Using Group Gradient Method”, IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021.
+- \[C1\] Haoyu Yang, Shifan Zhang, Kang Liu, *Siting Liu*, Benjamin Tan, Ramesh Karri, Siddharth Garg, Bei Yu, Evangeline F.Y. Young, [https://doi.org/10.1145/3394885.3431571 “Attacking a CNN-based Layout Hotspot Detector Using Group Gradient Method”], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021.
 
 === Journal papers
-- \[J3\] Peiyu Liao, Dawei Guo, Zizheng Guo, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, "DREAMPlace 4.0: Timing-driven Placement with Momentum-based Net Weighting and Lagrangian-based Refinement", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
+- \[J3\] Peiyu Liao, Dawei Guo, Zizheng Guo, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.1109/TCAD.2023.3240132 "DREAMPlace 4.0: Timing-driven Placement with Momentum-based Net Weighting and Lagrangian-based Refinement"], IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
 
-- \[J2\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, "FastGR : Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
+- \[J2\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.1109/TCAD.2022.3217668 "FastGR : Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler"], IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
 
-- \[J1\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jianli Chen, Hao Yu, Bei Yu, "Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design", ACM Transactions on Design Automation of Electronic Systems (*TODAES*), vol. 27, no. 4, 2022.
+- \[J1\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jianli Chen, Hao Yu, Bei Yu, [https://doi.org/10.1145/3503540 "Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design"], ACM Transactions on Design Automation of Electronic Systems (*TODAES*), vol. 27, no. 4, 2022.
 
 #Does not have temporarily, diligently!
 
@@ -59,6 +59,10 @@ Email: lusicaliu@outlook.com \n
   Aug 2020 - present
 - B.S.  (ACM class), Computer Science and Technology,
   [http://www.hust.edu.cn Huazhong University of Science and Technology(HUST)], Sept 2016 - June 2020
+
+== Experience
+- Software Engineer Intern, Cadence, June 2023 - present
+- Research Assistance, CUHK, Nov. 2019 - May 2020
 
 == Teaching
 - CSCI1540, 2020-R1,    Introduction to Computing Using C\+\+
@@ -69,6 +73,7 @@ Email: lusicaliu@outlook.com \n
 == Awards
 - Best Paper Award, DATE, 2022
 - Best Paper Award Nomination,  DATE,   2021
+- 3rd Place Award, ISPD Contest, 2020
 - Full Postgraduate Studentship, 	CUHK, 	2020-2024
 - Outstanding Graduate, 	HUST, 	2020
 - CCF Elite Collegiate Student Award, 	CCF, 	2019
