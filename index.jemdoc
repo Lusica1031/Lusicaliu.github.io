@@ -27,23 +27,27 @@ Email: lusicaliu@outlook.com \n
 
 == Publication
 === Conference papers
-- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, [pub/C9.pdf “Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement”], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+-\[C11\] Su Zheng, Lancheng Zou, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction", IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
 
-- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, [pub/C8.pdf “Restructure-Tolerant Timing Prediction via Multimodal Fusion”], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+-\[C10\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler (Extended Abstract)", International Joint Conference on Artificial Intelligence (*IJCAI*), Macau, Aug. 19–25, 2023.
 
-- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, [pub/C7.pdf “Mitigating Distribution Shift for Congestion Optimization in Global Placement”], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, "Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement", ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774606 “FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022. *(Best Paper Award)*
+- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, "Restructure-Tolerant Timing Prediction via Multimodal Fusion", ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C5\] Peiyu Liao, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774725 “DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022.
+- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, "Mitigating Distribution Shift for Congestion Optimization in Global Placement", ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C4\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jin Miao, Jianli Chen, Hao Yu, Bei Yu, [https://doi.org/10.23919/DATE51398.2021.9474241 “Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021. *(Best Paper Award Nomination)*
+- \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774606 "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler"], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022. *(Best Paper Award)*
 
-- \[C3\] *Siting Liu*, Qi Sun, Peiyu Liao, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE51398.2021.9473959 “Global Placement with Deep Learning-Enabled Explicit Routability Optimization”], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021.
+- \[C5\] Peiyu Liao, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774725 "DREAMPlace 4.0: Timing-driven Global Placement with Momentum-based Net Weighting"], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022.
 
-- \[C2\] Zhuolun He, Peiyu Liao, *Siting Liu*, Yuzhe Ma, Bei Yu, [https://doi.org/10.1145/3394885.3431625 “Physical Synthesis for Advanced Neural Network Processors”], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021. (Invited Paper)
+- \[C4\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jin Miao, Jianli Chen, Hao Yu, Bei Yu, [https://doi.org/10.23919/DATE51398.2021.9474241 "Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design"], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021. *(Best Paper Award Nomination)*
 
-- \[C1\] Haoyu Yang, Shifan Zhang, Kang Liu, *Siting Liu*, Benjamin Tan, Ramesh Karri, Siddharth Garg, Bei Yu, Evangeline F.Y. Young, [https://doi.org/10.1145/3394885.3431571 “Attacking a CNN-based Layout Hotspot Detector Using Group Gradient Method”], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021.
+- \[C3\] *Siting Liu*, Qi Sun, Peiyu Liao, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE51398.2021.9473959 "Global Placement with Deep Learning-Enabled Explicit Routability Optimization"], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Feb. 01–05, 2021.
+
+- \[C2\] Zhuolun He, Peiyu Liao, *Siting Liu*, Yuzhe Ma, Bei Yu, [https://doi.org/10.1145/3394885.3431625 "Physical Synthesis for Advanced Neural Network Processors"], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021. (Invited Paper)
+
+- \[C1\] Haoyu Yang, Shifan Zhang, Kang Liu, *Siting Liu*, Benjamin Tan, Ramesh Karri, Siddharth Garg, Bei Yu, Evangeline F.Y. Young, [https://doi.org/10.1145/3394885.3431571 "Attacking a CNN-based Layout Hotspot Detector Using Group Gradient Method"], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021.
 
 === Journal papers
 - \[J3\] Peiyu Liao, Dawei Guo, Zizheng Guo, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.1109/TCAD.2023.3240132 "DREAMPlace 4.0: Timing-driven Placement with Momentum-based Net Weighting and Lagrangian-based Refinement"], IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
