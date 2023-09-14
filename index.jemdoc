@@ -18,16 +18,18 @@ My Chinese name is 刘思婷.
 
 == Contact
 Email: lusicaliu@outlook.com \n
-[https://github.com/Lusica1031 Github]
+[https://github.com/Lusica1031 Github] \n
+[www.linkedin.com/in/siting-liu-35b90518a LinkedIn] \n
+[https://scholar.google.com/citations?hl=en&user=Cwh66aoAAAAJ Google Scholar]
 
 == Research Interest
-- Machine Learning in EDA
 - Placement and Routing Optimization
+- Machine Learning in EDA
 - GPU Acceleration
 
 == Publication
 === Conference papers
-- \[C11\] Su Zheng, Lancheng Zou, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction", IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
+- \[C11\] Su Zheng\*, Lancheng Zou\*, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction", IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
 
 - \[C10\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler (Extended Abstract)", International Joint Conference on Artificial Intelligence (*IJCAI*), Macau, Aug. 19–25, 2023.
 
@@ -65,7 +67,7 @@ Email: lusicaliu@outlook.com \n
   [http://www.hust.edu.cn Huazhong University of Science and Technology(HUST)], Sept 2016 - June 2020
 
 == Experience
-- Software Engineer Intern, Cadence, June 2023 - present
+- Software Engineer Intern, Cadence, June 2023 - Aug. 2023
 - Research Assistant, CUHK, Nov. 2019 - May 2020
 
 == Teaching
