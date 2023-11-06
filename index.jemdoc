@@ -29,15 +29,17 @@ Email: lusicaliu@outlook.com \n
 
 == Publication
 === Conference papers
+- \[C12\] *Siting Liu*, Jiaxi Jiang, Zhuolun He, Ziyi Wang, Yibo Lin, Bei Yu, Martin Wong, "Routing-aware Legal Hybrid Bonding Terminal Assignment for 3D Face-to-Face Stacked ICs", ACM International Symposium on Physical Design (*ISPD*), Taipei, Mar. 12–15, 2024.
+
 - \[C11\] Su Zheng\*, Lancheng Zou\*, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction", IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
 
-- \[C10\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler (Extended Abstract)", International Joint Conference on Artificial Intelligence (*IJCAI*), Macau, Aug. 19–25, 2023.
+- \[C10\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://www.ijcai.org/proceedings/2023/720 "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler (Extended Abstract)"], International Joint Conference on Artificial Intelligence (*IJCAI*), Macau, Aug. 19–25, 2023.
 
-- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, "Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement", ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C9\] *Siting Liu*\*, Ziyi Wang\*, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, [https://doi.org/10.1109/DAC56929.2023.10247794 "Concurrent Sign-off Timing Optimization via Deep Steiner Points Refinement"], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, "Restructure-Tolerant Timing Prediction via Multimodal Fusion", ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C8\] Ziyi Wang\*, *Siting Liu*\*, Yuan Pu, Song Chen, Tsung-Yi Ho, Bei Yu, [https://doi.org/10.1109/DAC56929.2023.10247802 "Restructure-Tolerant Timing Prediction via Multimodal Fusion"], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
-- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, "Mitigating Distribution Shift for Congestion Optimization in Global Placement", ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
+- \[C7\] Su Zheng, Lancheng Zou, *Siting Liu*, Yibo Lin, Bei Yu, Martin Wong, [https://doi.org/10.1109/DAC56929.2023.10247660 "Mitigating Distribution Shift for Congestion Optimization in Global Placement"], ACM/IEEE Design Automation Conference (*DAC*), San Francisco, Jul. 09–13, 2023.
 
 - \[C6\] *Siting Liu*, Peiyu Liao, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.23919/DATE54114.2022.9774606 "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler"], IEEE/ACM Proceedings Design, Automation and Test in Europe (*DATE*), Mar. 14–23, 2022. *(Best Paper Award)*
 
@@ -87,4 +89,4 @@ Email: lusicaliu@outlook.com \n
 - First Prize in Mathematics competition of Chinese College Students, 	CMS, 	2017
 
 
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=m&d=QGW25KQ8MaU7zwbQXSMND-9LftuITB9SyrkqhM00Hjg"></script>
+# <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=m&d=QGW25KQ8MaU7zwbQXSMND-9LftuITB9SyrkqhM00Hjg"></script>
