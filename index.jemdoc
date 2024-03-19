@@ -21,6 +21,7 @@ Email: lusicaliu@outlook.com \n
 [https://github.com/Lusica1031 Github] \n
 [https://www.linkedin.com/in/siting-liu-35b90518a LinkedIn] \n
 [https://scholar.google.com/citations?hl=en&user=Cwh66aoAAAAJ Google Scholar]
+[./pdf/resume.pdf Resume]\n
 
 == Research Interest
 - Placement and Routing Optimization
@@ -29,9 +30,9 @@ Email: lusicaliu@outlook.com \n
 
 == Publication
 === Conference papers
-- \[C12\] *Siting Liu*, Jiaxi Jiang, Zhuolun He, Ziyi Wang, Yibo Lin, Bei Yu, Martin Wong, "Routing-aware Legal Hybrid Bonding Terminal Assignment for 3D Face-to-Face Stacked ICs", ACM International Symposium on Physical Design (*ISPD*), Taipei, Mar. 12–15, 2024.
+- \[C12\] *Siting Liu*, Jiaxi Jiang, Zhuolun He, Ziyi Wang, Yibo Lin, Bei Yu, Martin Wong, [https://doi.org/10.1145/3626184.3633322 "Routing-aware Legal Hybrid Bonding Terminal Assignment for 3D Face-to-Face Stacked ICs"], ACM International Symposium on Physical Design (*ISPD*), Taipei, Mar. 12–15, 2024.
 
-- \[C11\] Su Zheng\*, Lancheng Zou\*, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction", IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
+- \[C11\] Su Zheng\*, Lancheng Zou\*, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, [https://doi.org/10.1109/ICCAD57390.2023.10323800 "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction"], IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
 
 - \[C10\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://www.ijcai.org/proceedings/2023/720 "FastGR: Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler (Extended Abstract)"], International Joint Conference on Artificial Intelligence (*IJCAI*), Macau, Aug. 19–25, 2023.
 
