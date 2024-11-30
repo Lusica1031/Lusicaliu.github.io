@@ -4,17 +4,20 @@
 
 ~~~
 {}{img_left}{siting_1.png}{150}{150}{Siting Liu}
-Siting Liu, Ph.D. Candidate \n
-[http://www.cse.cuhk.edu.hk/ Department of Computer Science and Engineering]\n
-[http://www.cuhk.edu.hk/ The Chinese University of Hong Kong]\n
-Supervisor: [http://www.cse.cuhk.edu.hk/~byu/ Professor Bei Yu]
+Siting Liu, Ph.D.\n
+Senior Researcher in Huawei Hong Kong Research Center\n
+# [http://www.cse.cuhk.edu.hk/ Department of Computer Science and Engineering]\n
+# [http://www.cuhk.edu.hk/ The Chinese University of Hong Kong]\n
+# Supervisor: [http://www.cse.cuhk.edu.hk/~byu/ Professor Bei Yu]
 ~~~
 
 == Biography
-I am currently a Ph.D. candidate at [http://www.cse.cuhk.edu.hk the Department of Computer Science and Engineering], [http://www.cuhk.edu.hk The Chinese University of Hong Kong (CUHK)], 
-under the supervision of [http://www.cse.cuhk.edu.hk/~byu/ Prof. Bei Yu] since Fall 2020. 
-Previously, I received my B.S. in the Department of Computer Science and Technology from [http://www.hust.edu.cn Huazhong University of Science and Technology (HUST)] in 2020.
+I am currently senior researcher in EDA Lab, Huawei Hong Kong Research Center. Previously, I obtained my Ph.D. degree [http://www.cse.cuhk.edu.hk the Department of Computer Science and Engineering], [http://www.cuhk.edu.hk The Chinese University of Hong Kong (CUHK)], 
+under the supervision of [http://www.cse.cuhk.edu.hk/~byu/ Prof. Bei Yu] on Aug. 2024. 
+Before that, I received my B.S. in the Department of Computer Science and Technology from [http://www.hust.edu.cn Huazhong University of Science and Technology (HUST)] in 2020.
 My Chinese name is 刘思婷.
+
+I'm serving as the track programme committee member in Asia and South Pacific Design Automation Conference (ASP-DAC) 2025 and reviewer for IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), ACM Transactions on Design Automation of Electronic Systems (TODAES), and Integration, the VLSI Journal.
 
 == Contact
 Email: lusicaliu@outlook.com \n
@@ -24,12 +27,14 @@ Email: lusicaliu@outlook.com \n
 [https://github.com/Lusica1031/Lusica1031.github.io/blob/master/pdf/Resume.pdf Resume] \n
 
 == Research Interest
-- Placement and Routing Optimization
+- Electronic Design Automation
 - Machine Learning in EDA
 - GPU Acceleration
 
 == Publication
 === Conference papers
+- \[C13\] Xinfei Liu, *Siting Liu*, Bei Yu, Song Chen, Qi Xu, “ThePlace: Thermal-Aware Placement With Operator Learning-Based Ultra-Fast Simulator”, IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Japan, Jan. 20–23, 2025.
+
 - \[C12\] *Siting Liu*, Jiaxi Jiang, Zhuolun He, Ziyi Wang, Yibo Lin, Bei Yu, Martin Wong, [https://doi.org/10.1145/3626184.3633322 "Routing-aware Legal Hybrid Bonding Terminal Assignment for 3D Face-to-Face Stacked ICs"], ACM International Symposium on Physical Design (*ISPD*), Taipei, Mar. 12–15, 2024.
 
 - \[C11\] Su Zheng\*, Lancheng Zou\*, Peng XU, *Siting Liu*, Bei Yu, Martin Wong, [https://doi.org/10.1109/ICCAD57390.2023.10323800 "Lay-Net: Grafting Netlist Knowledge on Layout-Based Congestion Prediction"], IEEE/ACM International Conference on Computer-Aided Design (*ICCAD*), San Francisco, Oct. 29–Nov. 02, 2023.
@@ -55,6 +60,10 @@ Email: lusicaliu@outlook.com \n
 - \[C1\] Haoyu Yang, Shifan Zhang, Kang Liu, *Siting Liu*, Benjamin Tan, Ramesh Karri, Siddharth Garg, Bei Yu, Evangeline F.Y. Young, [https://doi.org/10.1145/3394885.3431571 "Attacking a CNN-based Layout Hotspot Detector Using Group Gradient Method"], IEEE/ACM Asian and South Pacific Design Automation Conference (*ASPDAC*), Jan. 18–21, 2021.
 
 === Journal papers
+- \[J5\] *Siting Liu*, Ziyi Wang, Fangzhou Liu, Yibo Lin, Bei Yu, Martin Wong, “Sign-off Timing Considerations via Concurrent Routing Topology Optimization”, IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2024.
+
+- \[J4\] Yuxuan Zhao, Peiyu Liao, *Siting Liu*, Jiaxi Jiang, Yibo Lin, Bei Yu, [https://doi.org/10.1109/TCAD.2024.3444716 "Analytical Heterogeneous Die-to-Die 3D Placement with Macros"], IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2024.
+ 
 - \[J3\] Peiyu Liao, Dawei Guo, Zizheng Guo, *Siting Liu*, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.1109/TCAD.2023.3240132 "DREAMPlace 4.0: Timing-driven Placement with Momentum-based Net Weighting and Lagrangian-based Refinement"], IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
 
 - \[J2\] *Siting Liu*, Yuan Pu, Peiyu Liao, Hongzhong Wu, Rui Zhang, Zhitang Chen, Wenlong Lv, Yibo Lin, Bei Yu, [https://doi.org/10.1109/TCAD.2022.3217668 "FastGR : Global Routing on CPU-GPU with Heterogeneous Task Graph Scheduler"], IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (*TCAD*), 2023.
@@ -62,16 +71,16 @@ Email: lusicaliu@outlook.com \n
 - \[J1\] Qi Sun, Tinghuan Chen, *Siting Liu*, Jianli Chen, Hao Yu, Bei Yu, [https://doi.org/10.1145/3503540 "Correlated Multi-objective Multi-fidelity Optimization for HLS Directives Design"], ACM Transactions on Design Automation of Electronic Systems (*TODAES*), vol. 27, no. 4, 2022.
 
 #Does not have temporarily, diligently!
-
-== Education
-- Ph.D. Computer Science and Engineering, [http://www.cuhk.edu.hk The Chinese University of Hong Kong],
-  Aug 2020 - present
-- B.S.  (ACM class), Computer Science and Technology,
-  [http://www.hust.edu.cn Huazhong University of Science and Technology(HUST)], Sept 2016 - June 2020
-
 == Experience
+- Senior Researcher, Huawei Hong Kong Research Center, Aug. 2024 - Now
+- Software Engineer Intern, Huawei Hong Kong Research Center, Dec. 2023 - March 2024
 - Software Engineer Intern, Cadence, June 2023 - Aug. 2023
 - Research Assistant, CUHK, Nov. 2019 - May 2020
+
+== Education
+- Ph.D. Computer Science and Engineering, [http://www.cuhk.edu.hk The Chinese University of Hong Kong], Aug 2020 - Aug 2024
+- B.S.  (ACM class), Computer Science and Technology,
+  [http://www.hust.edu.cn Huazhong University of Science and Technology(HUST)], Sept 2016 - June 2020
 
 == Teaching
 - CSCI1540, 2020-R1,    Introduction to Computing Using C\+\+
@@ -80,6 +89,8 @@ Email: lusicaliu@outlook.com \n
 - CSCI1530, 2021-R2,    Computer Principles and Java Programming
 
 == Awards
+- First Place Award, ACM SIGDA Student Research Competition, 2024
+- Best PhD Thesis Poster Award, CCF DAC, 2024
 - Best Paper Award, DATE, 2022
 - Best Paper Award Nomination,  DATE,   2021
 - 3rd Place Award, ISPD Contest, 2020
